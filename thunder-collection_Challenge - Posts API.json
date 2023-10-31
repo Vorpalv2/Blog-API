@@ -1,0 +1,101 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Challenge - Posts API",
+    "dateExported": "2023-10-31T15:50:55.697Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "462c52c7-28ab-45ec-98fe-385f44dcc04b",
+            "colId": "fdd1b834-acce-4bef-9a3f-21ea56b06849",
+            "containerId": "",
+            "name": "Post New Post",
+            "url": "http://localhost:4000/newPost",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-10-31T15:35:47.569Z",
+            "modified": "2023-10-31T15:44:32.381Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "This is a test title"
+                    },
+                    {
+                        "name": "content",
+                        "value": "This is test content"
+                    },
+                    {
+                        "name": "author",
+                        "value": "This is test author"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "3fc57dc2-5ebc-4afa-94e5-77e25a7451da",
+            "colId": "fdd1b834-acce-4bef-9a3f-21ea56b06849",
+            "containerId": "",
+            "name": "Patch Specific Post",
+            "url": "http://localhost:4000/posts/1",
+            "method": "PATCH",
+            "sortNum": 20000,
+            "created": "2023-10-31T15:45:07.063Z",
+            "modified": "2023-10-31T15:48:57.568Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "Patched Title"
+                    },
+                    {
+                        "name": "content",
+                        "value": "Patched Content"
+                    },
+                    {
+                        "name": "author",
+                        "value": "Patched Author"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d9d0ab16-af1f-4726-b3a3-6eeed5009ecf",
+            "colId": "fdd1b834-acce-4bef-9a3f-21ea56b06849",
+            "containerId": "",
+            "name": "Get All Posts",
+            "url": "http://localhost:4000/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-10-31T15:46:32.034Z",
+            "modified": "2023-10-31T15:46:41.119Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "003062d3-1a47-418f-b26b-8f5c44a1acd7",
+            "colId": "fdd1b834-acce-4bef-9a3f-21ea56b06849",
+            "containerId": "",
+            "name": "Delete Specific Post",
+            "url": "http://localhost:4000/posts/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-10-31T15:48:10.103Z",
+            "modified": "2023-10-31T15:48:42.794Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
